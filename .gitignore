@@ -1,0 +1,7 @@
+my_compiler
+lex.yy.c
+parser.tab.c
+parser.tab.h
+*.o
+.vscode/
+tables.txt

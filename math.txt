@@ -1,0 +1,35 @@
+var PI : float;   
+var raza : float;
+var a : int;
+var b : int;
+var rezultat : float;
+
+Main {
+    // 1. Acum va functiona atribuirea
+    PI := 3.14;
+    raza := 10.0;
+    
+    // Calcul aria cercului
+    rezultat := PI * raza * raza; 
+    
+    Print("Aria cercului cu raza 10 este:");
+    Print(rezultat);
+
+    // 2. Testare Precedenta Operatori
+    a := 5;
+    b := 2;
+    Print("Calcul 5 + 2 * 10 (ar trebui 25):");
+    Print(a + b * 10);
+    
+    Print("Calcul (5 + 2) * 10 (ar trebui 70):");
+    Print((a + b) * 10);
+
+    // 3. Testare Logic (Check)
+    check (rezultat > 100.0) {
+        Print("Aria este mare (peste 100).");
+    }
+    
+    check (rezultat <= 100.0) {
+        Print("Aria este mica.");
+    }
+}

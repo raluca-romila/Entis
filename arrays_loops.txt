@@ -1,0 +1,42 @@
+var n : int;
+var i : int;
+var suma : int;
+var temp : int;
+var v[10] : int; // Vector de maxim 10 elemente
+
+Main {
+    Print("Cate elemente adunam (max 10)?");
+    Read(n);
+
+    // Protectie
+    check(n > 10) { 
+        Print("Prea multe! Setam la 5."); 
+        n := 5; 
+    }
+
+    Print("Introdu elementele:");
+
+    // 1. Testam FOR LOOP pentru citire si populare vector
+    for (i := 0; i < n; i++) {
+        Print("Introdu numar:");
+        Read(temp);
+        v[i] := temp;
+    }
+
+    suma := 0;
+    i := 0;
+
+    // 2. Testam WHILE LOOP pentru calcul suma
+    loop (i < n) {
+        suma := suma + v[i];
+        i++;
+    }
+
+    Print("Suma calculata este:");
+    Print(suma);
+
+    Print("Elementele vectorului sunt (afisate cu FOR):");
+    for (i := 0; i < n; i++) {
+        Print(v[i]);
+    }
+}

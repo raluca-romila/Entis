@@ -1,0 +1,28 @@
+const var MAX_VAL : int;
+var x : int;
+var v[5] : int;
+
+Main {
+    MAX_VAL := 100;
+    x := 0;
+
+    Print("--- INCEPE TESTUL DE ERORI ---");
+    Print("Decomenteaza liniile de mai jos pe rand pentru a testa.");
+
+    // TEST 1: Modificare Constanta (Eroare Semantica)
+    // MAX_VAL := 200;
+    
+    // TEST 2: Impartire la Zero (Eroare Runtime)
+    // x := 50 / 0;
+
+    // TEST 3: Incrementare Constanta (Eroare Semantica)
+    // MAX_VAL++;
+
+    // TEST 4: Accesare Index Invalid Vector (Eroare Runtime)
+    // v[10] := 5;
+
+    // TEST 5: Atribuire Gresita (Eroare Semantica)
+    // v := 10; // Nu poti atribui valoare direct vectorului, trebuie index
+
+    Print("Daca vezi acest mesaj, nicio eroare nu a fost activata.");
+}
